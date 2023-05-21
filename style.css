@@ -1,0 +1,198 @@
+.box{
+margin-left: 200px;
+margin-right: 200px;
+margin-top: 70px;
+padding: 50px 50px 50px 50px;
+ background-color: #234E70 ;
+
+
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,1);
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,1);
+    border-radius: 20px 20px 20px 20px;
+    width: 550px;
+    height: 500px auto;
+}
+.container{
+    display: flex;
+color: white;
+    text-align: center;
+}
+body{
+    background-color: white;
+    color: black;
+}
+@media only screen and (max-width: 1200px) {
+    .box, .container {
+      margin:auto;
+      width: auto;
+      height: auto;
+      display: block;
+    }
+  }
+  .name{
+    color: white;
+    letter-spacing: 3px;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    font-style: oblique;
+  }
+  .myname{
+color: rgb(13, 199, 255);
+    text-transform: uppercase;
+  }
+  .mydesc{
+    font-size: 25px ;
+    padding-left: 10px;
+    padding-right: 40px;
+    text-align:justify ;
+
+    text-indent: 20px;
+  }
+  @media only screen and (max-width: 600px) {
+    .mydesc {
+padding: 0;
+margin: auto;
+letter-spacing: 0px;
+      
+    }
+  }
+  .mypic{
+    margin-top: 150px;
+    width: 300px;
+    height: 100%;
+    z-index: 1;
+    
+  }
+  .halaman{
+    text-align: center;
+    align-items: center;
+  }
+
+  @media only screen and (max-width: 200px) {
+   .mypic{
+    margin: auto;
+    max-width: auto;
+    height: auto;
+    padding: 0;
+    padding-left: 0px;
+   }
+  }
+
+  .logo{
+    height: 10% ;
+    width: 10%;
+    align-items: center;
+    padding-left: 20px;
+  }
+  .social{
+    align-items: center;
+    text-align: center;
+    float: none;
+  }
+  .logogmail{
+    height: 10% ;
+    width: 10%;
+    text-align: center;
+  }
+
+  
+  .navbar {
+    overflow: hidden;
+    background-color: #234E70 ;
+    font-family: Arial;
+    margin-bottom: 20px;
+    
+  }
+  
+
+.sampleworks{
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: #234E70 ;
+   
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,1);
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,1);
+    border-radius: 20px 20px 20px 20px;
+    width:  auto;
+    height:  auto ;
+    color: white;
+    padding-bottom: 10px;
+}
+.titleSW{
+    text-align: center;
+padding-top: 20px;
+}
+.dets{
+    padding-left: 20px;
+}
+@media screen and (max-width: 1200px ) {
+    .sampleworks, .titlesampleworks {
+        margin-left: 0;
+        margin-right: 0;
+        width: auto;
+        height: auto;
+        margin: auto;
+        padding-left: 5px;
+    }
+}
+.titlesampleworks{
+    font-size: 30px;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.tosee{
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-left: 50px;
+    text-align: justify;
+    text-align: center;
+}
+.toclick{
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-left: 50px;
+    text-align: justify;
+    text-align: center;
+}
+.vapi{
+    padding-left: 40px;
+}
+.tinapay{
+    background-color: black;
+    border: 0.1px 0  solid;
+    padding: 15px 32px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px 10px 10px 10px;
+  color: white;
+  margin-bottom: 20px;
+}
+.tinapay:hover{
+    background-color: rgb(44, 43, 43);
+}
+
+.row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 50%;
+  }
+
+  .forbuttontinapay{
+    align-items: center;
+    float: none;
+    text-align: center;
+  }
+  .forimagesample{
+    align-items: center;
+    float: center;
+    text-align: center;
+  }
