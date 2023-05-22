@@ -1,10 +1,9 @@
 .box{
 margin-left: 200px;
-margin-right: 200px;
-margin-top: 70px;
+margin-right: 150px;
 padding: 50px 50px 50px 50px;
- background-color: #234E70 ;
 
+background-color:#234e70 ;
 
     box-shadow: 0px 0px 15px 0px rgba(0,0,0,1);
     -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,1);
@@ -13,18 +12,31 @@ padding: 50px 50px 50px 50px;
     width: 550px;
     height: 500px auto;
 }
+.navbar{
+  position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color:#234e70 ;
+    color: white;
+    font-family: 'Exo 2', sans-serif;
+    padding: 1em;
+
+z-index: 0;
+}
 .container{
     display: flex;
 color: white;
-    text-align: center;
 }
 body{
-    background-color: white;
+  background-color:rgb(37, 37, 37) ;
     color: black;
+    margin: 0;
+    margin-top: 0;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1300px) {
     .box, .container {
-      margin:auto;
+      margin:30px 30px 30px 30px;
       width: auto;
       height: auto;
       display: block;
@@ -33,37 +45,52 @@ body{
   .name{
     color: white;
     letter-spacing: 3px;
-    font-size: 35px;
+    font-size: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 900;
     font-style: oblique;
   }
+  .forsoc{
+    font-size: 20px ;
+  }
   .myname{
-color: rgb(13, 199, 255);
+color: wheat;
     text-transform: uppercase;
   }
   .mydesc{
     font-size: 25px ;
     padding-left: 10px;
     padding-right: 40px;
-    text-align:justify ;
 
-    text-indent: 20px;
+    text-align: justify;
+    
+    font-family: Arial, Helvetica, sans-serif;
+  
   }
   @media only screen and (max-width: 600px) {
-    .mydesc {
+    .mydesc, .forsoc{
 padding: 0;
+padding-left: 0;
+padding-right: 0;
 margin: auto;
 letter-spacing: 0px;
+font-size: 15px ;
       
     }
   }
-  .mypic{
+.mypic{
     margin-top: 150px;
     width: 300px;
-    height: 100%;
+    height: 300px;
     z-index: 1;
     
+  }
+  @media screen and (max-width:1300px) {
+    .image{
+      margin-top: 20px;
+      align-items: center;
+      text-align: center;
+    }
   }
   .halaman{
     text-align: center;
@@ -71,128 +98,86 @@ letter-spacing: 0px;
   }
 
   @media only screen and (max-width: 200px) {
-   .mypic{
+   .mypic, .logo{
     margin: auto;
     max-width: auto;
     height: auto;
     padding: 0;
     padding-left: 0px;
+    word-wrap: 100%;
    }
   }
 
   .logo{
     height: 10% ;
     width: 10%;
-    align-items: center;
+
     padding-left: 20px;
+    padding-right: 20px;
   }
-  .social{
-    align-items: center;
-    text-align: center;
-    float: none;
-  }
-  .logogmail{
-    height: 10% ;
-    width: 10%;
-    text-align: center;
+  .logo:hover{
+    transform: scale(1.5);
   }
 
-  
-  .navbar {
-    overflow: hidden;
-    background-color: #234E70 ;
-    font-family: Arial;
-    margin-bottom: 20px;
-    
-  }
-  
+.buttonsample{
 
-.sampleworks{
-    margin-left: 200px;
-    margin-right: 200px;
-    background-color: #234E70 ;
-   
-    box-shadow: 0px 0px 15px 0px rgba(0,0,0,1);
-    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,1);
-    -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,1);
-    border-radius: 20px 20px 20px 20px;
-    width:  auto;
-    height:  auto ;
-    color: white;
-    padding-bottom: 10px;
+  padding: 10px 10px 10px 10px;
+
+  float: right;
+  margin-right: 200px;
+  background-color: wheat;
 }
-.titleSW{
-    text-align: center;
-padding-top: 20px;
+@media screen and (max-width: 600px){
+  .buttonsample{
+  align-items: center;
+ text-align: center;
+ float: right;
+  }
 }
-.dets{
-    padding-left: 20px;
-}
-@media screen and (max-width: 1200px ) {
-    .sampleworks, .titlesampleworks {
-        margin-left: 0;
-        margin-right: 0;
-        width: auto;
-        height: auto;
-        margin: auto;
-        padding-left: 5px;
-    }
-}
-.titlesampleworks{
-    font-size: 30px;
-    text-align: left;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-}
-.tosee{
-    font-size: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding-left: 50px;
-    text-align: justify;
-    text-align: center;
-}
-.toclick{
-    font-size: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding-left: 50px;
-    text-align: justify;
-    text-align: center;
-}
-.vapi{
-    padding-left: 40px;
-}
-.tinapay{
-    background-color: black;
-    border: 0.1px 0  solid;
-    padding: 15px 32px;
-    border: none;
-    text-align: center;
-    text-decoration: none;
+
+.dropdown {
+  position: relative;
   display: inline-block;
+}
+
+.dropbtn {
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 10px;
   font-size: 16px;
-  border-radius: 10px 10px 10px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  min-width: 160px;
+  background-color:wheat;
+ 
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 0px;
+  position: relative;
+
+
+}
+
+.dropdown-content a:hover{
+  background-color:#234f70a6 ;
   color: white;
-  margin-bottom: 20px;
-}
-.tinapay:hover{
-    background-color: rgb(44, 43, 43);
 }
 
-.row {
-    display: flex;
-  }
-  
-  .column {
-    flex: 50%;
-  }
 
-  .forbuttontinapay{
-    align-items: center;
-    float: none;
-    text-align: center;
-  }
-  .forimagesample{
-    align-items: center;
-    float: center;
-    text-align: center;
-  }
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.toaligncenter{
+float: right;
+}
