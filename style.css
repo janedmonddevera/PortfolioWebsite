@@ -24,6 +24,15 @@ background-color:#234e70 ;
 
 z-index: 0;
 }
+@media screen and (max-width: 600px) {
+  .navbar{
+    margin: auto;
+    margin: auto;
+   
+    padding: 0 0 0 0;
+  }
+  
+}
 .container{
   display: flex;
   color: white;
@@ -44,6 +53,7 @@ align-items: justify;
 padding: 15px 15px 15px 15px;
       margin-left: 50px;
 margin-right: 50px;
+border-radius: 0px;
       
     }
   }
@@ -94,6 +104,8 @@ margin: auto;
 letter-spacing: 0px;
 font-size: 18px ;
       padding-top: 0;
+      align-items: center;
+      text-align: center;
     }
   }
   .mydesc{
@@ -111,7 +123,7 @@ font-size: 18px ;
 margin: auto;
 letter-spacing: 0px;
 font-size: 15px ;
-      
+      align-items: center;
     }
   }
 .mypic{
@@ -127,7 +139,7 @@ font-size: 15px ;
       align-items: center;
       text-align: center;
       float: none;
-      height: auto;
+      height: 500px auto;
       width: 100%;
       display: block;
       padding-bottom: 0;
@@ -152,15 +164,20 @@ font-size: 15px ;
   .logo:hover{
     transform: scale(1.5);
   }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 650px) {
     .mypic, .logo{
      margin: 0 auto;
-     width: 15%;
+     width: 25%;
      height: auto;
      padding: 0 0 0 0 ;
       display: flex;
      word-wrap: 100%;
-     
+     align-items: center;
+     text-align: center;
+    
+     padding-left: 10px;
+     padding-right: 0;
+     margin-left: 50px;
     }
    }
 .buttonsample{
@@ -171,13 +188,17 @@ font-size: 15px ;
   margin-right: 200px;
   background-color: wheat;
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 900px){
   .buttonsample{
-  align-items: center;
  text-align: center;
- float: right;
+align-items: center;
+float: none;
+margin-top: 10px;
+margin-bottom: 10px;
+
   }
 }
+
 
 .dropdown {
   position: relative;
@@ -236,8 +257,25 @@ float: right;
   display: block;
 }
 
-@media (max-width: 480px) {
-  .text, .logo {
+@media (max-width: 1000px) {
+  .text, .logo, .mypic, .forsoc {
     display: inline;
+    align-items: center;
+    text-align: center;
+    padding: 0 0 0 0;
+    height: auto;
+    margin: auto;
+  }
+}
+
+@media (max-width: 1000px) {
+   .forsoc, .logo {
+    display: inline;
+    align-items: center;
+    text-align: center;
+    padding: 0 0 0 0;
+    height: auto;
+    margin: auto;
+    width: 8%;
   }
 }
