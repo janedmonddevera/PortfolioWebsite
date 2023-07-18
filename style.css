@@ -12,7 +12,7 @@ header{
   position: relative;
   width: 100%;
   height: 80px;
-  background-color:#234e70 ;
+  background-color:#1a2633 ;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
 display: flex;
@@ -23,7 +23,7 @@ padding: 0 100px;
 .box{
 margin-left: 200px;
 margin-right: 200PX;
-margin-top: 25px;
+
 padding: 30px 30px 30px 30px;
 
     width: 1100px;
@@ -32,6 +32,7 @@ padding: 30px 30px 30px 30px;
 .navbar{
   margin-bottom: 0;
   padding-bottom: 0 ;
+  
 }
 .navbar ul{
   display: flex;
@@ -44,6 +45,7 @@ padding: 30px 30px 30px 30px;
   border-radius: 30px;
   transition: 0.2s;
   font-size: 14px;
+  margin-bottom: 12px;
 background-color: transparent;
 margin-right: 20px;
 color: white;
@@ -90,11 +92,24 @@ font-weight: bold;
 .container{
   display: flex;
   color: white;
+  margin-top: 0;
   
 }
-
+.introduce{
+  background-color: #1a2633;
+  height: 100vh;
+  margin-top: 0;
+}
+.aboutme{
+  background-color: aliceblue;
+  height: 25vh;
+}
+.portfolioDiv{
+  background-color: #284666;
+  height: 100vh;
+}
 body{
-  background-color:#101820 ;
+  background-color:#1a2633 ;
     color: black;
     margin: 0;
     margin-top: 0;
@@ -109,7 +124,7 @@ body{
 align-items: justify;
     margin-left: 40px;
 margin-right: 40px;
-    margin-top:10px;
+   ;
    padding: 5px 5px 5px 5px;
    border-radius:10px;
    width: auto;
@@ -124,7 +139,7 @@ display: block;
 align-items: justify;
     margin-left: 20px;
 margin-right: 20px;
-    margin-top:10px;
+  
    padding: 5px 5px 5px 5px;
    border-radius:10px;
 
@@ -141,7 +156,7 @@ display: block;
 align-items: justify;
       margin-left: 10px;
 margin-right: 10px;
-      margin-top:10px;
+
      padding: 5px 5px 5px 5px;
      border-radius: 10px;
     }
@@ -155,7 +170,7 @@ display: block;
 align-items: justify;
       margin-left: 0;
 margin-right: 0;
-      margin-top:5px;
+
      padding: 3px 3px 3px 3px;
      border-radius: 7px;
     }
@@ -164,15 +179,15 @@ margin-right: 0;
   
   .forsoc{
     
-    margin-top: 20px;
+  
 padding: 10px 10px 10px 10px;
 width: 50px;
-border-radius: 10px;
+border-radius: 20rem;
 display: flex;
 position: relative;
 margin-right: 20px;
 color: black !important;
-background-color: wheat ;
+
 cursor: pointer;
 transition: color 0.4s linear;
 
@@ -201,7 +216,7 @@ transition: color 0.4s linear;
     }
   }
   .forsoc:hover{
-    color:black !important;
+    color:rgba(245, 222, 179, 0.719) !important;
     background-color: transparent;
     transform: scale(1.5);
   }
@@ -212,8 +227,8 @@ transition: color 0.4s linear;
     top: 0;
     width: 100%;
     height: 100%;
-    border-radius: 10px;
-    background:rgb(12, 12, 12) ;
+    border-radius: 20rem;
+    background:rgba(245, 222, 179, 0.719) ;
     border:2px  #234e70 solid;
     z-index: -1;
     transition: transform .3s;
@@ -239,7 +254,6 @@ transition: color 0.4s linear;
      .name{
 margin: auto;
 letter-spacing: 0px;
-margin-top: 10px;
 font-size: 30px ;
       padding-top: 0;
       
@@ -302,7 +316,7 @@ padding-right: 0;
   }
 .mypic{
     margin-top: auto;
-    width: 400px;
+    width: 450px;
     min-height: auto ;
     height: auto ;
 cursor: pointer;
@@ -436,6 +450,9 @@ a:link{
 
 .text {
   display: block;
+  margin-top: 100px;
+  margin-right: 20px;
+  margin-left: 50px;
 }
 
 
@@ -633,7 +650,8 @@ transition: 0.5s;
   white-space: nowrap;
   border-right: 2px solid;
   width: 0;
-  animation: typing 1.5s steps(30, end) forwards, blinking 1s infinite;
+  animation: typing 1.2s steps(30, end) forwards, blinking 1s infinite;
+  animation-delay: 1.5;
 }
 @media screen and (max-width:600px) {
   .typewriter{
@@ -962,11 +980,12 @@ margin-top: 20px;
 
 .projectColumn1{
   margin: 10px 0 10px 10px;
-  background-color: #1a2633;
+  background-color: transparent;
   width: 48%;
   float: left;
   height: 400px;
   align-items: center;
+  justify-content: center;
 }
 .projectColumn2{
   background-color: #1a2633;
@@ -1143,9 +1162,10 @@ background-color: #234e70;
   left: 0;
   right: 0;
   bottom: 0;
+  
   background-color: rgba(0, 0, 0, 0.795);
   z-index: 2;
-  cursor: pointer;
+
 }
 #overlay1 {
   position: fixed;
@@ -1171,20 +1191,34 @@ background-color: #234e70;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.795);
   z-index: 2;
-  cursor: pointer;
+
 }
 
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
 
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 #text{
   position: absolute;
-  top: 50%;
+  top: 0;
   left: 50%;
   font-size: 50px;
   color: white;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%,0%);
   -ms-transform: translate(-50%,-50%);
   text-align: left;
   font-size: 20px;
+  background-color: #1a2633;
+  padding: 100px 100px 100px 100px;
 }
 .projectNametext{
   text-align: left;
@@ -1203,4 +1237,170 @@ ul li{
   width: 40px;
   height: auto;
   vertical-align: middle;
+}
+
+.footer{
+  background-color: #1a2633;
+  height: 15vh;
+color: white;
+}
+footer{
+  display: flex;
+  padding-top: 20px;
+}
+.freelance{
+float: right;
+align-items: right;
+justify-content: right;
+
+width: 50%;
+display: block;
+margin-right: 50px;
+}
+.footernameDiv{
+
+
+
+width: 50%;
+}
+.footertext{
+  font-size: 18px;
+  margin-top: 20px;
+margin-left: 20px;
+color: white;
+text-decoration: none;
+margin-right: 10px;
+}
+.footertext2{
+  font-size: 18px;
+  margin-top: 20px;
+float: right;
+color: white;
+text-decoration: none;
+margin-right: 10px;
+}
+.footertext a{
+  color: inherit;
+}
+
+.upwork{
+  height: auto;
+  width: 5%;
+  vertical-align:middle;
+float: right;
+margin-top: 15px;
+}
+.gmail{
+  vertical-align: middle;
+  height: auto;
+  width: 5%;
+}
+.techstack{
+  font-size: 25px;
+  padding-top: 20px;
+}
+.valorantapiModal{
+  height: 250px;
+  width: 500px;
+
+background-image: url(images/valoPS.png);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+  justify-content: center;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  padding-top: 50px;
+  margin-left: 35px;
+margin-top: 50px;
+font-size: 50px;
+cursor: pointer;
+border-radius: 20px
+}
+.valorantapiModal:hover{
+  border: 2px wheat solid;
+  animation: 2s both;
+  animation-delay: 2s;
+  filter: blur(0);
+  -webkit-filter: blur(0);
+  color: wheat;
+}
+
+.nvrsmodal{
+  height: 250px;
+  width: 500px;
+
+background-image: url(images/nvrs.png);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+  justify-content: center;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  padding-top: 50px;
+  margin-left: 35px;
+margin-top: 50px;
+font-size: 50px;
+cursor: pointer;
+border-radius: 20px
+}
+.textfornvrsmodal{
+  transform: translate(7%,-350%);
+  z-index: 999;
+  font-size: 38px;
+  color: black;
+
+}
+
+.nvrsmodal:hover{
+  border: 2px wheat solid;
+  animation: 2s both;
+  animation-delay: 2s;
+  filter: blur(0);
+  -webkit-filter: blur(0);
+  color: wheat;
+}
+.watsonsPOSmodal{
+  height: 250px;
+  width: 500px;
+
+background-image: url(images/watsonPOS.png);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+  justify-content: center;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  padding-top: 50px;
+  margin-left: 35px;
+margin-top: 50px;
+font-size: 50px;
+cursor: pointer;
+border-radius: 20px
+}
+.watsonsPOSmodal:hover{
+  border: 2px wheat solid;
+  animation: 2s both;
+  animation-delay: 2s;
+  filter: blur(0);
+  -webkit-filter: blur(0);
+  color: wheat;
+}
+
+@media screen and (max-width:1100px) {
+  .valorantapiModal{
+    height: 170px;
+    width: 420px;
+  }
+  .nvrsmodal{
+    height: 170px;
+    width: 420px;
+  }
+  .watsonsPOSmodal{
+    height: 170px;
+    width: 420px;
+  }
+  .textfornvrsmodal{
+    font-size: 30px;
+  }
 }
