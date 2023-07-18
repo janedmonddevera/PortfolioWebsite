@@ -977,46 +977,54 @@ margin-top: 20px;
     width: 95%;
   }
 }
+@media screen and (max-width:900px) {
+  .projects{
+    width: 100%;
+  }
+}
 
 .projectColumn1{
   margin: 10px 0 10px 10px;
   background-color: transparent;
   width: 48%;
   float: left;
-  height: 400px;
+  height: 300px;
   align-items: center;
   justify-content: center;
+overflow: hidden;
 }
 .projectColumn2{
   background-color: #1a2633;
   width: 48%;
-  height: 400px;
+  height: 300px;
   float: right;
   margin: 10px 10px 10px ;
-  align-items: center;
-}
 
+}
+@media screen and (max-width:1100px) {
+  .projectColumn1, .projectColumn2{
+  
+    height: 300px;
+  }
+}
 @media screen and (max-width:900px) {
   .projectColumn1, .projectColumn2{
     float: none;
     display: block;
     width: 80%;
     margin: auto;
-    height: 350px;
+    height: 285px;
+    margin-bottom: 20px;
   }
 }
 @media screen and (max-width:600px) {
   .projectColumn1, .projectColumn2{
 
-    height: 300px;
+    height: 170px;
+    margin-bottom: 10px;
   }
 }
-@media screen and (max-width:400px) {
-  .projectColumn1, .projectColumn2{
 
-    height: 220px;
-  }
-}
 .valoapi{
   width: 380px;
   height: auto;
@@ -1149,8 +1157,8 @@ background-color: #234e70;
 }
 @media screen and (max-width:600px) {
   .works{
-    margin: auto;
-    font-size: 30px;
+    margin: 20px;
+    font-size: 20px;
   }
 }
 #overlay {
@@ -1300,107 +1308,126 @@ margin-top: 15px;
   padding-top: 20px;
 }
 .valorantapiModal{
-  height: 250px;
-  width: 500px;
+height: 270px;
+  width: auto;
 
 background-image: url(images/valoPS.png);
+
 background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
   justify-content: center;
-  filter: blur(2px);
-  -webkit-filter: blur(2px);
-  padding-top: 50px;
-  margin-left: 35px;
-margin-top: 50px;
-font-size: 50px;
 cursor: pointer;
-border-radius: 20px
+border-radius: 20px;
+margin: auto;
 }
 .valorantapiModal:hover{
   border: 2px wheat solid;
-  animation: 2s both;
-  animation-delay: 2s;
-  filter: blur(0);
-  -webkit-filter: blur(0);
+
+  transition: 1s ease-in;
   color: wheat;
 }
 
 .nvrsmodal{
-  height: 250px;
-  width: 500px;
+  height: 270px;
+  width: auto;
 
 background-image: url(images/nvrs.png);
 background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
   justify-content: center;
-  filter: blur(2px);
-  -webkit-filter: blur(2px);
-  padding-top: 50px;
-  margin-left: 35px;
-margin-top: 50px;
-font-size: 50px;
+
+
+
 cursor: pointer;
 border-radius: 20px
 }
 .textfornvrsmodal{
-  transform: translate(7%,-350%);
-  z-index: 999;
-  font-size: 38px;
-  color: black;
 
+  z-index: 999;
+  font-size: 20px;
+  color: white;
+  font-weight: bolder;
+margin-left: 40px;
 }
 
 .nvrsmodal:hover{
   border: 2px wheat solid;
-  animation: 2s both;
-  animation-delay: 2s;
-  filter: blur(0);
-  -webkit-filter: blur(0);
+
+  transition: 1s ease-in;
   color: wheat;
 }
 .watsonsPOSmodal{
-  height: 250px;
-  width: 500px;
+  height: 270px;
+  width: auto;
 
 background-image: url(images/watsonPOS.png);
 background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
   justify-content: center;
-  filter: blur(2px);
-  -webkit-filter: blur(2px);
-  padding-top: 50px;
-  margin-left: 35px;
-margin-top: 50px;
-font-size: 50px;
+
+
+
+
 cursor: pointer;
 border-radius: 20px
 }
 .watsonsPOSmodal:hover{
   border: 2px wheat solid;
-  animation: 2s both;
-  animation-delay: 2s;
-  filter: blur(0);
-  -webkit-filter: blur(0);
+
+  transition: 1s ease-in;
   color: wheat;
 }
 
-@media screen and (max-width:1100px) {
+
+
+@media screen and (max-width:900px) {
   .valorantapiModal{
-    height: 170px;
-    width: 420px;
+    height: 250px;
+    width: auto;
+    border-radius: 10px;
   }
   .nvrsmodal{
-    height: 170px;
-    width: 420px;
+    height: 250px;
+    width: auto;
+    border-radius: 10px;
   }
   .watsonsPOSmodal{
-    height: 170px;
-    width: 420px;
+    height: 250px;
+    width: auto;
+    border-radius: 10px;
   }
   .textfornvrsmodal{
-    font-size: 30px;
+    font-size: 20px;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width:600px) {
+  .valorantapiModal{
+    height: 150px;
+    width: auto;
+    margin: auto;
+    border-radius: 0;
+  }
+  .nvrsmodal{
+    height: 150px;
+    width: auto;
+    margin: auto;
+    border-radius: 0;
+  }
+  
+  .watsonsPOSmodal{
+    height: 150px;
+    width: auto;
+    margin: auto;
+    border-radius: 0;
+  
+  }
+  .textfornvrsmodal{
+    font-size: 14px;
+
+    margin-left: 0;
   }
 }
