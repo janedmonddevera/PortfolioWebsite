@@ -1561,23 +1561,31 @@ border-radius: 20px
 }
 .indexPicturePortfolio{
   margin-top: auto;
-  width: 450px;
+  width: 500px;
   min-height: auto ;
   height: auto ;
 cursor: pointer;
-  padding-right: 40px;
+
   margin-top: 100px;
   
 }
 .portfoliotext{
 margin-top: 150px;
   margin-right: 70px;
-  margin-left: 70px;
   font-size: 14px;
 color: white;
-font-size: 20px;
+font-size: 25px;
+
 }
 
+@media screen and (max-width:1100px) {
+  .indexPicturePortfolio{
+    width: 450px;
+  }
+  .portfoliotext{
+    font-size: 20px;
+  }
+}
 @media screen and (max-width:900px) {
   .picturePortfolio {
     height: 100%;
@@ -1608,7 +1616,7 @@ font-size: 20px;
     margin-top: 10px;
     margin-left: 150px;
     margin-right: 150px;
-font-size: 14px;
+font-size: 18px;
 
   }
 }
@@ -1626,7 +1634,7 @@ font-size: 14px;
   }
   
   .portfoliotext{
-font-size: 12px;
+font-size: 14px;
 margin-top: 10px;
 margin-left: 40px;
 margin-right: 40px;
@@ -1646,8 +1654,9 @@ margin-right: 40px;
   }
   .portfoliotext{
     margin-top: 10px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 10px;
 
   }
 }
