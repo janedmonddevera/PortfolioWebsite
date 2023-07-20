@@ -218,8 +218,9 @@ transition: color 0.4s linear;
       width: auto;
       padding: auto;
       height: auto;
-      padding: 5px 5px 5px 5px;
+      padding: 2px 2px 2px 2px;
       margin-right: 5px;
+      
     }
   }
   .forsoc:hover{
