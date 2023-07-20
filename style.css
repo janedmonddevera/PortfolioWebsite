@@ -478,8 +478,8 @@ a:link{
 .text {
   display: block;
   margin-top: 100px;
-  margin-right: 20px;
-  margin-left: 50px;
+
+
 }
 
 
@@ -1317,7 +1317,7 @@ ul li{
 
 .footer{
   background-color: #1a2633;
-  height: 15vh;
+  height: 100%;
 color: white;
 }
 footer{
@@ -1340,7 +1340,7 @@ margin-right: 50px;
 width: 50%;
 }
 .footertext{
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 20px;
 margin-left: 20px;
 color: white;
@@ -1348,7 +1348,7 @@ text-decoration: none;
 margin-right: 10px;
 }
 .footertext2{
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 20px;
 float: right;
 color: white;
@@ -1374,11 +1374,11 @@ margin-top: 15px;
 
 
 @media screen and (max-width:900px) {
-  p .footertext {
-    font-size: 16px !important;
+  .footertext {
+    font-size: 12px ;
   }
   a .footertext2{
-    font-size: 16px;
+    font-size: 12px;
   }
   .freelance{
     font-size: 16px;
@@ -1388,14 +1388,29 @@ margin-top: 15px;
   }
 }
 @media screen and (max-width:600px) {
-  .footertext .footertext2{
+  .footertext {
     font-size: 10px;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .footertext2{
+    font-size: 8px;
+    margin: auto;
+    margin-top: 10px;
   }
   .freelance{
     font-size: 10px;
+    margin: auto;
+    margin-top :0%;
+    padding-top: 0;
+    margin-bottom: 0%;
   }
   .upwork{
-    width: 10%;
+    width: 15%;
+    margin-top: 10px;
+  }
+  .footer{
+    padding-top: 0;
   }
 }
 
@@ -1529,27 +1544,110 @@ border-radius: 20px
   }
 }
 .picturePortfolio{
-  height: 500px;
+  height: 400px;
   width: 50%;
-  background-color: whitesmoke;
+  background-color: transparent;
   text-align: center;
+
 }
 .descriptionPortfolio{
   height: 500px;
   width: 50%;
-  background-color: whitesmoke;
+  background-color: transparent;
   text-justify: distribute;
   text-align: justify;
   
 }
 .indexPicturePortfolio{
-  height: auto;
-  margin: auto;
-  width: 400px;
- transform: translate(0, 40%);
+  margin-top: auto;
+  width: 450px;
+  min-height: auto ;
+  height: auto ;
+cursor: pointer;
+  padding-right: 40px;
+  margin-top: 100px;
+  
 }
-.descriptionPortfolio p{
-  transform: translate(0, 40%);
+.portfoliotext{
+margin-top: 150px;
   margin-right: 70px;
   margin-left: 70px;
+  font-size: 14px;
+color: white;
+font-size: 20px;
 }
+
+@media screen and (max-width:900px) {
+  .picturePortfolio {
+    height: 100%;
+    margin-top: 0;
+    width: 100%;
+  }
+  .descriptionPortfolio{
+    height: 100%;
+    margin-top: 0;
+    width: 100%;
+   padding-bottom: 20px;
+  }
+  .imageportfolio{
+    align-items: center;
+    text-align: center;
+  }
+  .indexPicturePortfolio{
+    width: 300px;
+    margin-top: 30px;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .portfolioDiv{
+    display: block;
+  }
+  .portfoliotext{
+    margin-top: 10px;
+    margin-left: 150px;
+    margin-right: 150px;
+font-size: 14px;
+
+  }
+}
+
+@media screen and (max-width:600px) {
+
+ 
+ 
+  .indexPicturePortfolio{
+    width: 200px;
+    margin-top: 30px;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .portfoliotext{
+font-size: 12px;
+margin-top: 10px;
+margin-left: 40px;
+margin-right: 40px;
+  }
+}
+@media screen and (max-width:300px) {
+
+  .indexPicturePortfolio{
+    width: 150x;
+ 
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .portfolioDiv{
+    display: block;
+  }
+  .portfoliotext{
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+  }
+}
+
