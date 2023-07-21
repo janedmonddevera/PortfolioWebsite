@@ -107,7 +107,7 @@ font-weight: bold;
   }
 }
 .aboutme{
-  background-color: aliceblue;
+  background-color: transparent;
   height: 25vh;
 }
 .portfolioDiv{
@@ -919,7 +919,7 @@ padding: 40px 40px 40px 40px;
 
 
 .box3{
-  background-color: #234e70;
+  background-color: transparent;
 border-radius: 10px;
 display: block;
 color: white;
