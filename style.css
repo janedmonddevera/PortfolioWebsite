@@ -101,11 +101,7 @@ font-weight: bold;
   margin-top: 0;
   z-index: 999;
 }
-@media screen and (max-width:600px) {
-  .introduce{
-    height: 70%;
-  }
-}
+
 .aboutme{
   background-color: transparent;
   height: 25vh;
@@ -280,6 +276,7 @@ font-size: 30px ;
   @media screen and (max-width: 600px) {
     .name{
       font-size: 18px;
+      margin-top: 20px;
     }
   }
   @media screen and (max-width: 400px) {
@@ -323,7 +320,7 @@ padding-right: 0;
     }
   }
 .mypic{
-    margin-top: auto;
+    margin-top: 20px;
     width: 450px;
     min-height: auto ;
     height: auto ;
@@ -353,7 +350,7 @@ cursor: pointer;
   }
   @media screen and (max-width: 600px) {
     .mypic{
-      width: 200px;
+      width: 250px;
       align-items: center;
       text-align: center;
       float: none;
@@ -363,29 +360,29 @@ cursor: pointer;
     
     }
   }
-  @media screen and (max-width: 340px) {
+  @media screen and (max-width: 300px) {
     .mypic{
-      width: 120px;
-      align-items: center;
-      text-align: center;
-      float: none;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
+      
+      margin: auto;
+      padding: auto;
+      width: 250px;
     
     }
   }
 
+
   
   .email{
     font-family: 'Fjalla One';
-    background-color: wheat;
-    color: black;
+    background-color: transparent;
+    border: 2px solid wheat;
+    color: white;
     margin-top: 40px;
     padding: 10px 10px 10px 10px;
     width: 350px;
     text-align: center;
     align-items: center;
+    text-decoration: none;
 border-radius: 10px;
 font-size: 20px;
 cursor: pointer;
@@ -462,6 +459,7 @@ a:link{
 }
 @media screen and (max-width:600px) {
   .anything{
+    margin-top: 20px;
     margin-left: 40px;
     margin-right: 40px;
     align-items: center;
@@ -505,10 +503,10 @@ a:link{
 @media (max-width: 600px) {
   .text {
     display: inline;
-   
+   margin-top: 200px;
     padding: auto;
     height: auto;
-    margin: auto;
+   
   }
 }
 .hi{
@@ -1016,6 +1014,20 @@ display: flex;
   .socialmediaaccounts{
     text-align: center;
     align-items: center;
+   
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width:300px) {
+  .socialmediaaccounts{
+    text-align: center;
+    align-items: center;
+   
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 20px;
   }
 }
 .projects{
@@ -1778,4 +1790,8 @@ padding-left: 30px;
 }
 .text-white{
   color: white;
+}
+.text-black{
+  color: black;
+
 }
