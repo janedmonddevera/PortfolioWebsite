@@ -1694,6 +1694,31 @@ margin-top: 10px;
 }
 
 
+.middleclass{
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  width: 50%;
+}
+@media screen and (max-width:700px) {
+  .middleclass{
+    width: 60%;
+  }
+}
+@media screen and (max-width:600px) {
+  .middleclass{
+    width: 50%;
+
+  }
+}
+@media screen and (max-width:400px) {
+  .middleclass{
+    width: 100%;
+padding-left: 30px;
+  }
+}
+
 .techstackpic{
   width: 90px;
   height: auto;
