@@ -827,28 +827,26 @@ padding: 40px 40px 40px 40px;
   }
 }
 .program{
-  text-indent: 50px;
+ 
   padding-top: 20px;
   font-size: 14px;
 }
-@media screen and (max-width:900px) {
-  .program{
-    
-   font-size:20px ;
-  }
-}
-@media screen and (max-width:600px) {
-  .program{
-    
-   font-size:13px ;
-  }
-}
+
 .proglang{
   margin-bottom: 20px;
   font-size: 20px;
 }
+@media screen and (max-width:600px) {
+  .proglang{
+ 
+    font-size: 14px;
+  }
+  .languagesss{
+    font-size: 14px;
+  }
+}
 .languagesss{
-  font-size: 18px;
+  font-size: 20px;
 }
 .personal{
   font-size: 40px;
@@ -870,7 +868,7 @@ padding: 40px 40px 40px 40px;
 .janedmonddevera{
   color: wheat;
   text-indent: 50px;
-  margin-left: 50px;
+  
   font-size: 20px;
 
 }
